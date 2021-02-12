@@ -16,7 +16,7 @@
   </p>
 </template>
 
-<script setup lang="ts">
+<script setup name="HelloWorld" lang="ts">
 import { ref, defineProps } from 'vue'
 
 defineProps({
