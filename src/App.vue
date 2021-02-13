@@ -6,7 +6,7 @@
 <script setup name="App" lang="ts">
 import HelloWorld from './components/HelloWorld.vue'
 
-const lint_test  = 0
+const lint_test   = 0
 </script>
 
 <style>
