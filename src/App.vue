@@ -1,10 +1,10 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png" />
+  <img alt="Vue logo" src="~/assets/logo.png" />
   <HelloWorld msg="Hello Vue 3 + TypeScript + Vite" />
 </template>
 
 <script setup name="App" lang="ts">
-import HelloWorld from './components/HelloWorld.vue'
+import HelloWorld from '~/components/HelloWorld.vue'
 </script>
 
 <style>
