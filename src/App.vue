@@ -1,10 +1,24 @@
 <template>
-  <img alt="Vue logo" src="~/assets/logo.png" />
+  <img alt="Vue logo" :src="urlLogo" />
   <HelloWorld msg="Hello Vue 3 + TypeScript + Vite" />
 </template>
 
-<script setup name="App" lang="ts">
+<script lang="ts">
+import { computed, defineComponent } from 'vue'
 import HelloWorld from '~/components/HelloWorld.vue'
+import Logo from '~/assets/logo.png'
+
+export default defineComponent({
+  name: 'App',
+  components: {
+    HelloWorld,
+  },
+  setup: () => {
+    const urlLogo = computed(() => Logo)
+
+    return { urlLogo }
+  },
+})
 </script>
 
 <style>
